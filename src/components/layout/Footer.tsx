@@ -3,7 +3,6 @@ import { Link } from "@tanstack/react-router";
 const links = [
   { href: "/#home", label: "Home" },
   { href: "/#about", label: "About Us" },
-  { href: "/#projects", label: "Our Projects" },
   { href: "/#contact", label: "Contact Us" },
 ] as const;
 
@@ -13,14 +12,14 @@ export function Footer() {
     <footer className="bg-slate-brand text-stone-brand">
       <div className="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-2">
         <div>
-          <h3 className="font-display text-2xl text-gold">GraySkull</h3>
+          <h3 className="font-display text-2xl text-gold">Grayskull</h3>
           <p className="mt-2 text-sm text-stone-brand/80 max-w-sm">
             Four decades of building quality, trust, and community across the Midlands.
           </p>
           <address className="mt-6 not-italic text-sm leading-relaxed text-stone-brand/80">
-            GraySkull Properties<br />
+            Grayskull Property<br />
             Midlands, United Kingdom<br />
-            <a href="mailto:info@grayskull.co.uk" className="hover:text-gold">info@grayskull.co.uk</a>
+            <a href="mailto:admin@grayskullproperty.co.uk" className="hover:text-gold">admin@grayskullproperty.co.uk</a>
           </address>
         </div>
         <div className="md:text-right">
@@ -37,9 +36,16 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-stone-brand/10">
-        <p className="mx-auto max-w-7xl px-6 py-5 text-center text-xs text-stone-brand/60">
-          © {year} GraySkull Properties Limited · All Rights Reserved
-        </p>
+        <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-stone-brand/60">
+            © {year} Grayskull Property Limited · All Rights Reserved
+          </p>
+          <div className="flex gap-6 text-xs text-stone-brand/60">
+            <Link to="/privacy" className="hover:text-gold transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-gold transition-colors">Terms & Conditions</Link>
+            <Link to="/cookies" className="hover:text-gold transition-colors">Cookies</Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

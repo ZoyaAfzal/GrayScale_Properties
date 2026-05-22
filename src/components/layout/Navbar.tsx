@@ -1,12 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/GraySkull Logo.png";
+import logo from "@/assets/Grayskull Logo.png";
 
 const links = [
   { to: "/#home", label: "Home" },
   { to: "/#about", label: "About Us" },
-  { to: "/#projects", label: "Our Projects" },
   { to: "/#contact", label: "Contact Us" },
 ] as const;
 
@@ -29,8 +28,8 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="GraySkull Logo" className="h-10 w-auto" />
-          <span className="font-display text-2xl font-semibold text-gray-600">GraySkull</span>
+          <img src={logo} alt="Grayskull Logo" className="h-10 w-auto" />
+          <span className="font-display text-2xl font-semibold text-gray-600">Grayskull</span>
         </Link>
 
         <ul className="hidden md:flex items-center gap-8">

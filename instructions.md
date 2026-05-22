@@ -1,8 +1,8 @@
-# Lovable Prompt: GraySkull Properties Website
+# Lovable Prompt: Grayskull Property Website
 
 ## Project Overview
 
-Build a **professional, low-maintenance property development company website** for **GraySkull** — a UK-based firm that builds, develops, and manages residential and commercial properties across the Midlands, with 40 years of experience.
+Build a **professional, low-maintenance property development company website** for **Grayskull** — a UK-based firm that builds, develops, and manages residential and commercial properties across the Midlands, with 40 years of experience.
 
 **Tech Stack:** Next.js 14 (App Router) · TypeScript · Tailwind CSS · React
 
@@ -10,7 +10,7 @@ Build a **professional, low-maintenance property development company website** f
 
 ## Brand & Design Direction
 
-- **Company Name:** GraySkull
+- **Company Name:** Grayskull
 - **Tone:** Clean, authoritative, refined — think high-trust professional services. Not flashy. Not startup-y.
 - **Color Palette:**
   - Primary: Deep slate/charcoal (`#1E2A38`)
@@ -45,7 +45,7 @@ app/
 ## Global Layout (`layout.tsx`)
 
 ### Navbar
-- Left: Company name **"GraySkull"** in `Playfair Display`, gold accent color, optionally with a small stylised house/building SVG icon inline
+- Left: Company name **"Grayskull"** in `Playfair Display`, gold accent color, optionally with a small stylised house/building SVG icon inline
 - Right: Navigation links → `Home` · `About Us` · `Our Projects` · `Contact Us`
 - Sticky on scroll with a subtle box-shadow appearing on scroll
 - Mobile: hamburger menu (collapsible)
@@ -55,12 +55,12 @@ app/
 - Two-column layout:
   - **Left:** Company name, one-line tagline, address block:
     ```
-    GraySkull Properties
+    Grayskull Property
     Midlands, United Kingdom
     info@grayskull.co.uk
     ```
   - **Right:** Quick navigation links (same as navbar)
-- Bottom bar: `© {dynamic year} GraySkull Properties Limited · All Rights Reserved`
+- Bottom bar: `© {dynamic year} Grayskull Property Limited · All Rights Reserved`
 - **No social media icons or links**
 - Background: charcoal (`#1E2A38`), text: white/light
 
@@ -80,9 +80,9 @@ app/
 
 #### Section 2 — Welcome / Intro
 - Two-column layout (text left, subtle styled box right)
-- Heading: **"Welcome to GraySkull Properties"**
+- Heading: **"Welcome to Grayskull Property"**
 - Body copy:
-  > GraySkull is a specialist property development and management company based in the Midlands. We build, develop, and manage high-quality residential and commercial properties, working in close partnership with both small and large developers to deliver exceptional results.
+  > Grayskull is a specialist property development and management company based in the Midlands. We build, develop, and manage high-quality residential and commercial properties, working in close partnership with both small and large developers to deliver exceptional results.
 - Right column: a clean stat/highlight card with three items:
   - 🏗 **40+ Years** of Experience
   - 🏘 **Residential & Commercial** Specialists
@@ -98,7 +98,7 @@ app/
 
 #### Section 4 — Why Choose Us
 - Light background section (`#F0EDE8`)
-- Left: heading **"Why GraySkull?"** + three bullet points:
+- Left: heading **"Why Grayskull?"** + three bullet points:
   - ✓ 40 years of trusted experience in the Midlands
   - ✓ Specialists in both residential and commercial sectors
   - ✓ Strong partnerships with developers at every scale
@@ -115,14 +115,14 @@ app/
 ### 2. About Us Page (`/about`)
 
 #### Section 1 — Page Header
-- Simple page hero with charcoal background, white heading: **"About GraySkull"**
+- Simple page hero with charcoal background, white heading: **"About Grayskull"**
 - Sub-line: *"Four decades of building quality, trust, and community across the Midlands."*
 
 #### Section 2 — Our Story
 - Single-column, comfortable reading width (max ~720px, centred)
 - Heading: **"Who We Are"**
 - Body:
-  > GraySkull Properties has been at the heart of the Midlands property landscape for over 40 years. From our roots as a residential builder, we have grown into a full-service property development and management company, trusted by homeowners, investors, and developers alike.
+  > Grayskull Property has been at the heart of the Midlands property landscape for over 40 years. From our roots as a residential builder, we have grown into a full-service property development and management company, trusted by homeowners, investors, and developers alike.
   >
   > We specialise in residential and commercial properties and take pride in working in true partnership with developers whether they are an individual building their first home or a large-scale commercial developer.
 
@@ -136,7 +136,7 @@ app/
 #### Section 4 — Experience Timeline (nested section)
 - Heading: **"40 Years of Milestones"**
 - Vertical timeline component with 4–5 placeholder milestones:
-  - `1985` — GraySkull founded in the Midlands
+  - `1985` — Grayskull founded in the Midlands
   - `1995` — Expanded into commercial property development
   - `2005` — Began large-scale developer partnerships
   - `2015` — Portfolio surpassed 500 completed properties
@@ -181,7 +181,7 @@ app/
 #### Section 2 — Two-column layout
 
 **Left — Contact Details:**
-- 📍 Address: GraySkull Properties, Midlands, United Kingdom
+- 📍 Address: Grayskull Property, Midlands, United Kingdom
 - 📞 Phone: 07700 000000 *(placeholder)*
 - 📧 Email: info@grayskull.co.uk
 - Brief note: *"We aim to respond to all enquiries within 2 business days."*
@@ -260,7 +260,7 @@ Add Google Fonts import to `app/layout.tsx` via `<link>` tags in `<head>`.
 
 - **No social media links** anywhere — not in footer, not in nav, nowhere.
 - **Minimal images** — only hero and project card placeholders. No gallery page.
-- **Dynamic year in footer**: `© {new Date().getFullYear()} GraySkull Properties Limited`
+- **Dynamic year in footer**: `© {new Date().getFullYear()} Grayskull Property Limited`
 - **Responsive**: mobile-first, fully responsive at all breakpoints
 - **Accessibility**: semantic HTML (`<main>`, `<section>`, `<nav>`, `aria-label`), sufficient colour contrast
 - **Performance**: no unnecessary dependencies — keep it lean
@@ -291,4 +291,4 @@ All copy should feel:
 - [ ] Google Fonts loaded in layout
 - [ ] Dynamic copyright year in footer
 - [ ] Fully responsive
-- [ ] Zero social media links
+- [ ] Zero social media linksks

@@ -1,77 +1,29 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageHeader } from "@/components/ui/PageHeader";
 
 export const Route = createFileRoute("/privacy")({
-  component: PrivacyPolicy,
-  head: () => ({
-    meta: [
-      { title: "Privacy Policy · GraySkull Properties" },
-      { name: "description", content: "Privacy policy for GraySkull Properties Limited." },
-    ],
-  }),
+  component: PrivacyPage,
 });
 
-function PrivacyPolicy() {
+function PrivacyPage() {
   return (
-    <>
-      <PageHeader title="Privacy Policy" subtitle="Your privacy is important to us. Learn how we handle your data." />
-      
-      <section className="mx-auto max-w-3xl px-6 py-20 md:py-24 space-y-8 text-base leading-relaxed text-foreground/90">
-        <div>
-          <h2 className="font-display text-2xl text-slate-brand mb-4">1. Introduction</h2>
-          <p>
-            GraySkull Properties Limited ("we", "us", or "our") is committed to protecting and respecting your privacy. 
-            This policy explains how we collect, use, and protect any personal information you provide to us through our website.
-          </p>
-        </div>
+    <div className="mx-auto max-w-3xl px-6 py-20 leading-relaxed text-slate-800">
+      <h1 className="font-display text-4xl text-slate-brand mb-6">Privacy Policy</h1>
+      <p className="text-sm text-muted-foreground mb-10">Last updated: 22 May 2026</p>
 
-        <div>
-          <h2 className="font-display text-2xl text-slate-brand mb-4">2. Information We Collect</h2>
-          <p>
-            We only collect personal information that you voluntarily provide to us via our contact form. This may include:
-          </p>
-          <ul className="list-disc ml-6 mt-2 space-y-2">
-            <li>Your full name</li>
-            <li>Your email address</li>
-            <li>Your phone number (if provided)</li>
-            <li>Any information included in your message</li>
-          </ul>
-        </div>
+      <h2 className="text-2xl font-display text-slate-brand mt-8 mb-4">1. Introduction</h2>
+      <p className="mb-4">Welcome to Grayskull Property (“we”, “our”, “us”). We are committed to protecting and respecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal data when you visit our website: www.grayskullproperty.co.uk. This policy is intended to comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
 
-        <div>
-          <h2 className="font-display text-2xl text-slate-brand mb-4">3. How We Use Your Information</h2>
-          <p>
-            The information you provide is used solely to respond to your enquiries and provide the services you have requested. 
-            We do not use your data for marketing purposes without your explicit consent, and we never sell your information to third parties.
-          </p>
-        </div>
+      <h2 className="text-2xl font-display text-slate-brand mt-8 mb-4">2. Who We Are</h2>
+      <p className="mb-4">Grayskull Property<br />Midlands, UK<br />Email: <a href="mailto:admin@grayskullproperty.co.uk" className="text-gold underline">admin@grayskullproperty.co.uk</a></p>
 
-        <div>
-          <h2 className="font-display text-2xl text-slate-brand mb-4">4. Data Storage and Security</h2>
-          <p>
-            We take appropriate security measures to prevent unauthorised access, disclosure, modification, or unauthorised destruction of your data. 
-            As a UK-based firm, we comply with relevant UK data protection legislation, including the UK GDPR.
-          </p>
-        </div>
+      <h2 className="text-2xl font-display text-slate-brand mt-8 mb-4">3. What Information We Collect</h2>
+      <p className="mb-4">We may collect information you provide directly (Name, Email, Phone, etc.) and information collected automatically (IP address, browser type, etc.). We may use cookies and similar technologies.</p>
 
-        <div>
-          <h2 className="font-display text-2xl text-slate-brand mb-4">5. Your Rights</h2>
-          <p>
-            You have the right to request access to the personal information we hold about you, to request corrections, or to ask that your data be deleted. 
-            To exercise these rights, please contact us at <a href="mailto:info@grayskull.co.uk" className="text-gold hover:underline">info@grayskull.co.uk</a>.
-          </p>
-        </div>
+      <h2 className="text-2xl font-display text-slate-brand mt-8 mb-4">4. How We Use Your Information</h2>
+      <p className="mb-4">We use your personal data to provide services, respond to enquiries, improve our website, and comply with legal obligations.</p>
 
-        <div>
-          <h2 className="font-display text-2xl text-slate-brand mb-4">6. Changes to This Policy</h2>
-          <p>
-            We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.
-          </p>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Last updated: May 2026
-          </p>
-        </div>
-      </section>
-    </>
+      <h2 className="text-2xl font-display text-slate-brand mt-8 mb-4">5. Your Rights</h2>
+      <p className="mb-4">Under UK GDPR, you have the right to access, correct, delete, or restrict processing of your personal data. Contact us at <a href="mailto:admin@grayskullproperty.co.uk" className="text-gold underline">admin@grayskullproperty.co.uk</a> to exercise your rights.</p>
+    </div>
   );
 }
