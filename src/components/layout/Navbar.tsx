@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/Grayskull Logo.png";
+import logo from "@/assets/grayskull-logo.png";
 
 const links = [
   { to: "/#home", label: "Home" },
